@@ -1,0 +1,43 @@
+S1 = ("Good Night")
+S2 =S1.replace("o","")
+print(S2)
+
+
+#---------------------------------
+
+
+def prime(x, y):
+    prime_list = []
+    for i in range(x, y):
+        if i == 0 or i == 1:
+            continue
+        else:
+            for j in range(2, int(i/2)+1):
+                if i % j == 0:
+                    break
+            else:
+                prime_list.append(i)
+    return prime_list
+
+starting_range = 0
+ending_range = 100
+lst = prime(starting_range, ending_range)
+if len(lst) == 0:
+    print("There are no prime numbers in this range")
+else:
+    print("The prime numbers in this range are: ", lst)
+    
+    
+    #-----------------------------
+    
+    test_str = "Musadaq yousif"
+  
+count = 0
+  
+for i in test_str:
+    if i == 'u':
+        count = count + 1
+  
+# printing result 
+print ("Count of u in Musadaq yousif is : "
+                            +  str(count))
